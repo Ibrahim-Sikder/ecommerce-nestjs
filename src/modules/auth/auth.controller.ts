@@ -10,9 +10,9 @@ import {
 import { AuthService } from './auth.service';
 import { RegisterDto } from './dto/register.dto';
 import { AuthResponseDto } from './dto/auth.response.dto';
-import { RefreshTokenGuard } from './guards/refresh-token.guard';
+import { RefreshTokenGuard } from '../../common/guards/refresh-token.guard';
 import { GetUser } from 'src/common/decorators/get-user-decorators';
-import { JwtAuthGuard } from './guards/jwt-auth-guard';
+import { JwtAuthGuard } from '../../common/guards/jwt-auth-guard';
 import { ApiBearerAuth, ApiOperation, ApiResponse } from '@nestjs/swagger';
 
 @Controller('auth')
